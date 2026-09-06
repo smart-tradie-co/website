@@ -1,8 +1,8 @@
 export const themeSettings = {
 	// Set this to the theme id you want to use as the starter default.
-	defaultThemeId: "retro-blue",
+	defaultThemeId: "precision-orange",
 	// Disable this for production sites that should not expose theme choices.
-	showThemeSwitcher: true,
+	showThemeSwitcher: false,
 	// Disable this with showThemeSwitcher when you want the configured default to always win.
 	persistUserSelection: true,
 	storageKey: "theme_id",

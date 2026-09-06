@@ -1,0 +1,47 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PageHeader from "@/components/elements/PageHeader.astro";
+---
+
+<Layout
+  title="Contact Smart Tradie Co"
+  description="Apply to work with Smart Tradie Co and build a smarter trade business."
+>
+  <section class="site-container py-14 md:py-24">
+    <PageHeader
+      title="Apply now"
+      description="Tell us a little about your business and what you want to make smarter."
+    />
+
+    <div class="mt-12 grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+      <div>
+        <h2 class="mb-4 text-3xl font-brand text-neutral-800 dark:text-neutral-100">Good businesses are built on good systems.</h2>
+        <p class="leading-relaxed text-neutral-600 dark:text-neutral-300">
+          Share where your business is today, what feels harder than it should, and what you would like to improve.
+        </p>
+        <p class="mt-6 text-sm text-neutral-500 dark:text-neutral-400">Smart Tradie Co · ABN 40 885 309 447</p>
+      </div>
+
+      <form class="grid gap-5 rounded-xl border border-primary/15 bg-bg-secondary p-6 dark:border-neutral-700 dark:bg-bg-secondary-dark md:p-8">
+        <label class="grid gap-2 text-sm font-medium text-neutral-700 dark:text-neutral-200">
+          Name
+          <input name="name" type="text" autocomplete="name" required class="rounded-lg border border-neutral-200 bg-bg-primary px-4 py-3 font-normal outline-none transition focus:border-primary dark:border-neutral-700 dark:bg-bg-primary-dark" />
+        </label>
+        <label class="grid gap-2 text-sm font-medium text-neutral-700 dark:text-neutral-200">
+          Email
+          <input name="email" type="email" autocomplete="email" required class="rounded-lg border border-neutral-200 bg-bg-primary px-4 py-3 font-normal outline-none transition focus:border-primary dark:border-neutral-700 dark:bg-bg-primary-dark" />
+        </label>
+        <label class="grid gap-2 text-sm font-medium text-neutral-700 dark:text-neutral-200">
+          Business
+          <input name="business" type="text" autocomplete="organization" class="rounded-lg border border-neutral-200 bg-bg-primary px-4 py-3 font-normal outline-none transition focus:border-primary dark:border-neutral-700 dark:bg-bg-primary-dark" />
+        </label>
+        <label class="grid gap-2 text-sm font-medium text-neutral-700 dark:text-neutral-200">
+          What would you like help with?
+          <textarea name="message" rows="6" required class="resize-y rounded-lg border border-neutral-200 bg-bg-primary px-4 py-3 font-normal outline-none transition focus:border-primary dark:border-neutral-700 dark:bg-bg-primary-dark"></textarea>
+        </label>
+        <button type="submit" disabled class="w-fit cursor-not-allowed rounded-xl bg-btn-primary px-5 py-3 text-sm font-medium text-btn-primary-text opacity-60">Submit application</button>
+        <p class="text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">The application form is being connected to our inbox. For now, submitting this form is not enabled.</p>
+      </form>
+    </div>
+  </section>
+</Layout>
